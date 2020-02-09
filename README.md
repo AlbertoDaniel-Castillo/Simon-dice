@@ -1,5 +1,5 @@
 # Simon Dice 
-![] (https://thumbs.subefotos.com/b998d1066497928504876671172fafa5o.jpg)
+![](https://thumbs.subefotos.com/b998d1066497928504876671172fafa5o.jpg)
 
 Un juego muy entretenido para pasar el rato, si te sirve para un proyecto o darte ideas, adelante descargalo.
 
