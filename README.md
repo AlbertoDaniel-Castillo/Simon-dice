@@ -1,5 +1,4 @@
 # Simon Dice 
-
 ![](https://ibb.co/wrzcbcJ)
 
 Un juego muy entretenido para pasar el rato, si te sirve para un proyecto o darte ideas, adelante descargalo.
