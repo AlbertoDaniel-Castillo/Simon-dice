@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body> 
+    <div class="header">
+      <ul>
+          <li>Nivel: <span id="nivel">1</span></li>
+          <li>SIMON DICE</li>
+          <li>Puntos: <span id="puntos">0</span></li>
+      </ul>
+  </div>
+
+  <div class="box">
+      <div class="gameboard">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+
+        <!-- ESTO ES PARA UN CONTADOR  <div class="centrar">
+          <div class="centrar-tiempo"><span id="tiempo">0</span></div>
+        </div> -->
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+      </div>
+  </div>
+
+        <section class="sound__secuencia">
+          <audio id="sound_do" src="sound/do.wav"></audio>
+          <audio id="sound_re" src="sound/re.wav"></audio>
+          <audio id="sound_mi" src="sound/mi.wav"></audio>
+          <audio id="sound_fa" src="sound/fa.wav"></audio>
+          <audio id="sound_win" src="sound/win.wav"></audio>
+          <audio id="sound_lose" src="sound/lose.wav"></audio>
+        </section> 
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script>
+      function sound(src) {
+        this.sound = document.createElement("audio");
+        this.sound.src = src;
+        this.sound.setAttribute("preload", "auto");
+        this.sound.setAttribute("controls", "none");
+        this.sound.style.display = "none";
+        document.body.appendChild(this.sound);
+        this.play = function(){
+          this.sound.play();
+        }
+        this.stop = function(){ 
+          this.sound.pause();
+        }
+      }
+    </script>
+    <script src="js/simon.js"></script>
+  </body>
+</html>
