@@ -12,8 +12,6 @@ const sound_win = document.getElementById('sound_win')
 const ULTIMO_NIVEL = 10
 var myMusic;
 
-alert("Hello World")
-
 class Juego {
   constructor() {
     myMusic = new sound ('sound/gamehappy.mp3')
@@ -149,7 +147,7 @@ class Juego {
     if(numeroColor === this.secuencia[this.subnivel]) {
       this.aumentarNumeroPuntos()
       this.subnivel++
-      if (this.subnivel === this.nivel){
+      if (this.subnivel == this.nivel){
         this.aumentarNumeroNivel()
         this.nivel++
         this.eliminarEventosClick()
