@@ -12,6 +12,7 @@ const sound_win = document.getElementById('sound_win')
 const ULTIMO_NIVEL = 10
 var myMusic;
 
+alert("Hello")
 
 class Juego {
   constructor() {
