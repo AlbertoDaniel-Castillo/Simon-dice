@@ -1,3 +1,5 @@
-if(1 == 1){
+var = "hawk"
+
+if (var == 'hawk'){
   alert("Ok")
 }
